@@ -11,6 +11,9 @@
 		F5777C83291C00CD000653FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C82291C00CD000653FF /* ContentView.swift */; };
 		F5777C85291C00CF000653FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5777C84291C00CF000653FF /* Assets.xcassets */; };
 		F5777C88291C00CF000653FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5777C87291C00CF000653FF /* Preview Assets.xcassets */; };
+		F5777C96291C0333000653FF /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C95291C0333000653FF /* UIColor+Ext.swift */; };
+		F5777C99291C0819000653FF /* TagLayoutView in Frameworks */ = {isa = PBXBuildFile; productRef = F5777C98291C0819000653FF /* TagLayoutView */; };
+		F5777C9B291C70BC000653FF /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C9A291C70BC000653FF /* TagListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		F5777C82291C00CD000653FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5777C84291C00CF000653FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5777C87291C00CF000653FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5777C8F291C00EF000653FF /* PopularKeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularKeywordModel.swift; sourceTree = "<group>"; };
+		F5777C92291C010C000653FF /* NanumGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Bold.ttf"; sourceTree = "<group>"; };
+		F5777C93291C010C000653FF /* NanumGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Regular.ttf"; sourceTree = "<group>"; };
+		F5777C95291C0333000653FF /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		F5777C9A291C70BC000653FF /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5777C99291C0819000653FF /* TagLayoutView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +60,11 @@
 		F5777C7F291C00CD000653FF /* SearchView-SwiftUI-Combine-1109 */ = {
 			isa = PBXGroup;
 			children = (
+				F5777C94291C0325000653FF /* Color+Ext */,
+				F5777C90291C00F7000653FF /* SwiftUIView */,
+				F5777C8E291C00EF000653FF /* PopularKeywords */,
+				F5777C91291C010C000653FF /* Font */,
 				F5777C80291C00CD000653FF /* SearchView_SwiftUI_Combine_1109App.swift */,
-				F5777C82291C00CD000653FF /* ContentView.swift */,
 				F5777C84291C00CF000653FF /* Assets.xcassets */,
 				F5777C86291C00CF000653FF /* Preview Content */,
 			);
@@ -65,6 +77,40 @@
 				F5777C87291C00CF000653FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5777C8E291C00EF000653FF /* PopularKeywords */ = {
+			isa = PBXGroup;
+			children = (
+				F5777C8F291C00EF000653FF /* PopularKeywordModel.swift */,
+			);
+			path = PopularKeywords;
+			sourceTree = "<group>";
+		};
+		F5777C90291C00F7000653FF /* SwiftUIView */ = {
+			isa = PBXGroup;
+			children = (
+				F5777C82291C00CD000653FF /* ContentView.swift */,
+				F5777C9A291C70BC000653FF /* TagListView.swift */,
+			);
+			path = SwiftUIView;
+			sourceTree = "<group>";
+		};
+		F5777C91291C010C000653FF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F5777C92291C010C000653FF /* NanumGothic-Bold.ttf */,
+				F5777C93291C010C000653FF /* NanumGothic-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F5777C94291C0325000653FF /* Color+Ext */ = {
+			isa = PBXGroup;
+			children = (
+				F5777C95291C0333000653FF /* UIColor+Ext.swift */,
+			);
+			path = "Color+Ext";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,9 @@
 			dependencies = (
 			);
 			name = "SearchView-SwiftUI-Combine-1109";
+			packageProductDependencies = (
+				F5777C98291C0819000653FF /* TagLayoutView */,
+			);
 			productName = "SearchView-SwiftUI-Combine-1109";
 			productReference = F5777C7D291C00CD000653FF /* SearchView-SwiftUI-Combine-1109.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,9 @@
 				Base,
 			);
 			mainGroup = F5777C74291C00CD000653FF;
+			packageReferences = (
+				F5777C97291C0819000653FF /* XCRemoteSwiftPackageReference "TagLayoutView" */,
+			);
 			productRefGroup = F5777C7E291C00CD000653FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +191,8 @@
 			files = (
 				F5777C83291C00CD000653FF /* ContentView.swift in Sources */,
 				F5777C81291C00CD000653FF /* SearchView_SwiftUI_Combine_1109App.swift in Sources */,
+				F5777C96291C0333000653FF /* UIColor+Ext.swift in Sources */,
+				F5777C9B291C70BC000653FF /* TagListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5777C97291C0819000653FF /* XCRemoteSwiftPackageReference "TagLayoutView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yotsu12/TagLayoutView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5777C98291C0819000653FF /* TagLayoutView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5777C97291C0819000653FF /* XCRemoteSwiftPackageReference "TagLayoutView" */;
+			productName = TagLayoutView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5777C75291C00CD000653FF /* Project object */;
 }
