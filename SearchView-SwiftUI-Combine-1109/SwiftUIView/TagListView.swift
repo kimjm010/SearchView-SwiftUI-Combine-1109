@@ -15,18 +15,16 @@ struct TagListView: View {
     var body: some View {
         GeometryReader { geometry in
             TagLayoutView(tags,
-                          tagFont: UIFont.systemFont(ofSize: 12, weight: .semibold),
+                          tagFont: UIFont.init(name: "NanumGothic", size: 12) ?? .systemFont(ofSize: 12),
                           padding: 20,
                           parentWidth: geometry.size.width) { tag in
                 Text(tag)
-                    .bold()
                     .fixedSize()
                     .padding(EdgeInsets(top: 4, leading: 12, bottom: 4, trailing: 12))
                     .foregroundColor(Color.init(uiColor: UIColor().getKeywordsColor()))
                     .background(Color.white)
-                    .overlay(RoundedRectangle(cornerRadius: 32).stroke(Color.init(uiColor: UIColor().getKeywordBorderColor()), lineWidth: 2.0))
+                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.init(uiColor: UIColor().getKeywordBorderColor()), lineWidth: 2.0))
             }
-//                          .padding(.all, 16)
         }
         
     }

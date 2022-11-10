@@ -14,6 +14,8 @@
 		F5777C96291C0333000653FF /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C95291C0333000653FF /* UIColor+Ext.swift */; };
 		F5777C99291C0819000653FF /* TagLayoutView in Frameworks */ = {isa = PBXBuildFile; productRef = F5777C98291C0819000653FF /* TagLayoutView */; };
 		F5777C9B291C70BC000653FF /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C9A291C70BC000653FF /* TagListView.swift */; };
+		F5777CA1291C77C6000653FF /* NanumGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5777C9F291C77C6000653FF /* NanumGothic-Bold.ttf */; };
+		F5777CA2291C77C6000653FF /* NanumGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5777CA0291C77C6000653FF /* NanumGothic-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +25,11 @@
 		F5777C84291C00CF000653FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5777C87291C00CF000653FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5777C8F291C00EF000653FF /* PopularKeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularKeywordModel.swift; sourceTree = "<group>"; };
-		F5777C92291C010C000653FF /* NanumGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Bold.ttf"; sourceTree = "<group>"; };
-		F5777C93291C010C000653FF /* NanumGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Regular.ttf"; sourceTree = "<group>"; };
 		F5777C95291C0333000653FF /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		F5777C9A291C70BC000653FF /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		F5777C9E291C7674000653FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F5777C9F291C77C6000653FF /* NanumGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Bold.ttf"; sourceTree = "<group>"; };
+		F5777CA0291C77C6000653FF /* NanumGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		F5777C7F291C00CD000653FF /* SearchView-SwiftUI-Combine-1109 */ = {
 			isa = PBXGroup;
 			children = (
+				F5777C9E291C7674000653FF /* Info.plist */,
 				F5777C94291C0325000653FF /* Color+Ext */,
 				F5777C90291C00F7000653FF /* SwiftUIView */,
 				F5777C8E291C00EF000653FF /* PopularKeywords */,
@@ -99,8 +103,8 @@
 		F5777C91291C010C000653FF /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				F5777C92291C010C000653FF /* NanumGothic-Bold.ttf */,
-				F5777C93291C010C000653FF /* NanumGothic-Regular.ttf */,
+				F5777C9F291C77C6000653FF /* NanumGothic-Bold.ttf */,
+				F5777CA0291C77C6000653FF /* NanumGothic-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -179,6 +183,8 @@
 			files = (
 				F5777C88291C00CF000653FF /* Preview Assets.xcassets in Resources */,
 				F5777C85291C00CF000653FF /* Assets.xcassets in Resources */,
+				F5777CA2291C77C6000653FF /* NanumGothic-Regular.ttf in Resources */,
+				F5777CA1291C77C6000653FF /* NanumGothic-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +330,7 @@
 				DEVELOPMENT_TEAM = 8D25AB624P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SearchView-SwiftUI-Combine-1109/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -353,6 +360,7 @@
 				DEVELOPMENT_TEAM = 8D25AB624P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SearchView-SwiftUI-Combine-1109/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

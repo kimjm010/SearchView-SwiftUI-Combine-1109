@@ -66,29 +66,24 @@ struct ContentView: View {
                 
                 
                 Text("추천 키워드")
-                    .font(.system(size: 16))
-                    .fontWeight(.semibold)
+                    .font(Font.custom("NanumGothic-Bold", size: 16))
                 
                 TagListView()
                     .frame(height: 120)
                 
                 
                 Text("인기 검색어")
-                    .font(.system(size: 16))
-                    .fontWeight(.semibold)
+                    .font(Font.custom("NanumGothic-Bold", size: 16))
 
                 ForEach(popularKeywords) { (keyword) in
                     Text(keyword.keyword)
-                        .font(.system(size: 12))
+                        .font(Font.custom("NanumGothic-Regular", size: 12))
                         .foregroundColor(Color.init(uiColor: UIColor().getKeywordsColor()))
                 }
             }
             .padding()
         }
-        
-        
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
