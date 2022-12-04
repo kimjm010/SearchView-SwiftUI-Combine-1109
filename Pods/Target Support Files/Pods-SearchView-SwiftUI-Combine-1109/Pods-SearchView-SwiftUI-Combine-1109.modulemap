@@ -1,0 +1,6 @@
+framework module Pods_SearchView_SwiftUI_Combine_1109 {
+  umbrella header "Pods-SearchView-SwiftUI-Combine-1109-umbrella.h"
+
+  export *
+  module * { export * }
+}

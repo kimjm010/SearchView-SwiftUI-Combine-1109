@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56B834997F02674B3BF53581 /* Pods_SearchView_SwiftUI_Combine_1109.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643ADDF40A8E1E14B2564B2C /* Pods_SearchView_SwiftUI_Combine_1109.framework */; };
 		F5777C81291C00CD000653FF /* SearchView_SwiftUI_Combine_1109App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C80291C00CD000653FF /* SearchView_SwiftUI_Combine_1109App.swift */; };
 		F5777C83291C00CD000653FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C82291C00CD000653FF /* ContentView.swift */; };
 		F5777C85291C00CF000653FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5777C84291C00CF000653FF /* Assets.xcassets */; };
 		F5777C88291C00CF000653FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5777C87291C00CF000653FF /* Preview Assets.xcassets */; };
 		F5777C96291C0333000653FF /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C95291C0333000653FF /* UIColor+Ext.swift */; };
-		F5777C99291C0819000653FF /* TagLayoutView in Frameworks */ = {isa = PBXBuildFile; productRef = F5777C98291C0819000653FF /* TagLayoutView */; };
-		F5777C9B291C70BC000653FF /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777C9A291C70BC000653FF /* TagListView.swift */; };
 		F5777CA1291C77C6000653FF /* NanumGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5777C9F291C77C6000653FF /* NanumGothic-Bold.ttf */; };
 		F5777CA2291C77C6000653FF /* NanumGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5777CA0291C77C6000653FF /* NanumGothic-Regular.ttf */; };
+		F5777CA5291CB2D5000653FF /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777CA4291CB2D5000653FF /* TagView.swift */; };
+		F5777CA8291CB3F8000653FF /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5777CA7291CB3F8000653FF /* TagViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		643ADDF40A8E1E14B2564B2C /* Pods_SearchView_SwiftUI_Combine_1109.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchView_SwiftUI_Combine_1109.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5EDB757D971C04F73BA2F6 /* Pods-SearchView-SwiftUI-Combine-1109.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchView-SwiftUI-Combine-1109.debug.xcconfig"; path = "Target Support Files/Pods-SearchView-SwiftUI-Combine-1109/Pods-SearchView-SwiftUI-Combine-1109.debug.xcconfig"; sourceTree = "<group>"; };
+		C61415476862AF412E167200 /* Pods-SearchView-SwiftUI-Combine-1109.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchView-SwiftUI-Combine-1109.release.xcconfig"; path = "Target Support Files/Pods-SearchView-SwiftUI-Combine-1109/Pods-SearchView-SwiftUI-Combine-1109.release.xcconfig"; sourceTree = "<group>"; };
 		F5777C7D291C00CD000653FF /* SearchView-SwiftUI-Combine-1109.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SearchView-SwiftUI-Combine-1109.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5777C80291C00CD000653FF /* SearchView_SwiftUI_Combine_1109App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView_SwiftUI_Combine_1109App.swift; sourceTree = "<group>"; };
 		F5777C82291C00CD000653FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,10 +30,11 @@
 		F5777C87291C00CF000653FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5777C8F291C00EF000653FF /* PopularKeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularKeywordModel.swift; sourceTree = "<group>"; };
 		F5777C95291C0333000653FF /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
-		F5777C9A291C70BC000653FF /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		F5777C9E291C7674000653FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F5777C9F291C77C6000653FF /* NanumGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Bold.ttf"; sourceTree = "<group>"; };
 		F5777CA0291C77C6000653FF /* NanumGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Regular.ttf"; sourceTree = "<group>"; };
+		F5777CA4291CB2D5000653FF /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		F5777CA7291CB3F8000653FF /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,18 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5777C99291C0819000653FF /* TagLayoutView in Frameworks */,
+				56B834997F02674B3BF53581 /* Pods_SearchView_SwiftUI_Combine_1109.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B2912952C330B82A1A95DB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				643ADDF40A8E1E14B2564B2C /* Pods_SearchView_SwiftUI_Combine_1109.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63FB1BB57D5150650142A82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE5EDB757D971C04F73BA2F6 /* Pods-SearchView-SwiftUI-Combine-1109.debug.xcconfig */,
+				C61415476862AF412E167200 /* Pods-SearchView-SwiftUI-Combine-1109.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F5777C74291C00CD000653FF = {
 			isa = PBXGroup;
 			children = (
 				F5777C7F291C00CD000653FF /* SearchView-SwiftUI-Combine-1109 */,
 				F5777C7E291C00CD000653FF /* Products */,
+				E63FB1BB57D5150650142A82 /* Pods */,
+				9B2912952C330B82A1A95DB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,9 +87,11 @@
 		F5777C7F291C00CD000653FF /* SearchView-SwiftUI-Combine-1109 */ = {
 			isa = PBXGroup;
 			children = (
+				F5777CA6291CB3F1000653FF /* ViewModel */,
 				F5777C9E291C7674000653FF /* Info.plist */,
 				F5777C94291C0325000653FF /* Color+Ext */,
 				F5777C90291C00F7000653FF /* SwiftUIView */,
+				F5777CA3291CB2BC000653FF /* UIKitView */,
 				F5777C8E291C00EF000653FF /* PopularKeywords */,
 				F5777C91291C010C000653FF /* Font */,
 				F5777C80291C00CD000653FF /* SearchView_SwiftUI_Combine_1109App.swift */,
@@ -95,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				F5777C82291C00CD000653FF /* ContentView.swift */,
-				F5777C9A291C70BC000653FF /* TagListView.swift */,
 			);
 			path = SwiftUIView;
 			sourceTree = "<group>";
@@ -117,6 +142,22 @@
 			path = "Color+Ext";
 			sourceTree = "<group>";
 		};
+		F5777CA3291CB2BC000653FF /* UIKitView */ = {
+			isa = PBXGroup;
+			children = (
+				F5777CA4291CB2D5000653FF /* TagView.swift */,
+			);
+			path = UIKitView;
+			sourceTree = "<group>";
+		};
+		F5777CA6291CB3F1000653FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5777CA7291CB3F8000653FF /* TagViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5777C8B291C00CF000653FF /* Build configuration list for PBXNativeTarget "SearchView-SwiftUI-Combine-1109" */;
 			buildPhases = (
+				97E2A70C68B1C5C9FC4B05BB /* [CP] Check Pods Manifest.lock */,
 				F5777C79291C00CD000653FF /* Sources */,
 				F5777C7A291C00CD000653FF /* Frameworks */,
 				F5777C7B291C00CD000653FF /* Resources */,
+				EFF9193CF5B1F80089D18FCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,7 +177,6 @@
 			);
 			name = "SearchView-SwiftUI-Combine-1109";
 			packageProductDependencies = (
-				F5777C98291C0819000653FF /* TagLayoutView */,
 			);
 			productName = "SearchView-SwiftUI-Combine-1109";
 			productReference = F5777C7D291C00CD000653FF /* SearchView-SwiftUI-Combine-1109.app */;
@@ -165,7 +207,6 @@
 			);
 			mainGroup = F5777C74291C00CD000653FF;
 			packageReferences = (
-				F5777C97291C0819000653FF /* XCRemoteSwiftPackageReference "TagLayoutView" */,
 			);
 			productRefGroup = F5777C7E291C00CD000653FF /* Products */;
 			projectDirPath = "";
@@ -190,15 +231,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		97E2A70C68B1C5C9FC4B05BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchView-SwiftUI-Combine-1109-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF9193CF5B1F80089D18FCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchView-SwiftUI-Combine-1109/Pods-SearchView-SwiftUI-Combine-1109-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchView-SwiftUI-Combine-1109/Pods-SearchView-SwiftUI-Combine-1109-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchView-SwiftUI-Combine-1109/Pods-SearchView-SwiftUI-Combine-1109-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5777C79291C00CD000653FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F5777C83291C00CD000653FF /* ContentView.swift in Sources */,
+				F5777CA5291CB2D5000653FF /* TagView.swift in Sources */,
 				F5777C81291C00CD000653FF /* SearchView_SwiftUI_Combine_1109App.swift in Sources */,
 				F5777C96291C0333000653FF /* UIColor+Ext.swift in Sources */,
-				F5777C9B291C70BC000653FF /* TagListView.swift in Sources */,
+				F5777CA8291CB3F8000653FF /* TagViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +405,7 @@
 		};
 		F5777C8C291C00CF000653FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5EDB757D971C04F73BA2F6 /* Pods-SearchView-SwiftUI-Combine-1109.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +436,7 @@
 		};
 		F5777C8D291C00CF000653FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61415476862AF412E167200 /* Pods-SearchView-SwiftUI-Combine-1109.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -401,25 +487,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F5777C97291C0819000653FF /* XCRemoteSwiftPackageReference "TagLayoutView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/yotsu12/TagLayoutView";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F5777C98291C0819000653FF /* TagLayoutView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F5777C97291C0819000653FF /* XCRemoteSwiftPackageReference "TagLayoutView" */;
-			productName = TagLayoutView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5777C75291C00CD000653FF /* Project object */;
 }

@@ -16,29 +16,7 @@ struct PopularKeyword: Identifiable {
 
 struct ContentView: View {
     @State private var searchedText: String = ""
-    
-    var popularKeywords: [PopularKeyword] = [
-        PopularKeyword(keyword: "빡코딩"),
-        PopularKeyword(keyword: "오늘도 빡코딩"),
-        PopularKeyword(keyword: "버거킹"),
-        PopularKeyword(keyword: "오므라이스"),
-        PopularKeyword(keyword: "핫도그"),
-        PopularKeyword(keyword: "아이스크림"),
-        PopularKeyword(keyword: "치즈"),
-        PopularKeyword(keyword: "빡코딩"),
-        
-        PopularKeyword(keyword: "빡코딩"),
-        PopularKeyword(keyword: "오늘도 빡코딩"),
-        PopularKeyword(keyword: "버거킹"),
-        PopularKeyword(keyword: "오므라이스"),
-        PopularKeyword(keyword: "핫도그"),
-        PopularKeyword(keyword: "아이스크림"),
-        PopularKeyword(keyword: "치즈"),
-        PopularKeyword(keyword: "빡코딩"),
-        
-        PopularKeyword(keyword: "빡코딩"),
-        PopularKeyword(keyword: "오늘도 빡코딩")
-    ]
+    @StateObject var tagViewModel = TagViewModel()
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
@@ -56,7 +34,7 @@ struct ContentView: View {
                         .textInputAutocapitalization(.never)
                         .submitLabel(.search)
                         .onSubmit {
-                            #warning("Todo: - 검색기능 구현")
+                            print(#fileID, #function, #line, "- ")
                         }
                 }
                 .padding()
@@ -64,18 +42,19 @@ struct ContentView: View {
                 .background(Color.init(uiColor: UIColor().getSearchViewBackgroundColor()))
                 .cornerRadius(6)
                 
-                
-                Text("추천 키워드")
-                    .font(Font.custom("NanumGothic-Bold", size: 16))
-                
-                TagListView()
-                    .frame(height: 120)
-                
+                VStack(alignment: .leading) {
+                    Text("추천 키워드")
+                        .font(Font.custom("NanumGothic-Bold", size: 16))
+                    
+                    TagViewController()
+                        .getRepresentable(vm: tagViewModel)
+                }
+                .frame(height: 150)
                 
                 Text("인기 검색어")
                     .font(Font.custom("NanumGothic-Bold", size: 16))
 
-                ForEach(popularKeywords) { (keyword) in
+                ForEach(tagViewModel.selectedTag) { (keyword) in
                     Text(keyword.keyword)
                         .font(Font.custom("NanumGothic-Regular", size: 12))
                         .foregroundColor(Color.init(uiColor: UIColor().getKeywordsColor()))
